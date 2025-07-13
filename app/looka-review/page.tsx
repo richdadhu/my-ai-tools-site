@@ -3,12 +3,12 @@ import Image from "next/image";
 
 /** ——— SEO ——— */
 export const metadata = {
-  title: "Looka Review 2024 – AI Logo Maker 深度测评",
+  title: "Looka Review 2024 – In-Depth Analysis of AI Logo Maker",
   description:
-    "亲测 Looka 生成 Logo 全流程，包含优缺点、定价、Looka vs Canva 对比，帮你判断是否值得购买。",
+    "Hands-on testing of Looka's logo generation process, including pros & cons, pricing, Looka vs Canva comparison, and clear recommendations on whether it's worth buying.",
 };
 
-/** ——— 简易星级组件 ——— */
+/** ——— Simple Star Rating Component ——— */
 function Stars({ score = 4.2 }) {
   const full = Math.floor(score);
   const half = score - full >= 0.5;
@@ -23,11 +23,11 @@ function Stars({ score = 4.2 }) {
   );
 }
 
-/** ——— 页面主体 ——— */
+/** ——— Main Content ——— */
 export default function LookaReview() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 font-sans leading-7">
-      {/* Hero 区 */}
+      {/* Hero Section */}
       <section className="text-center mb-10">
         <Image
           src="/looka-hero.png"
@@ -38,27 +38,27 @@ export default function LookaReview() {
           className="rounded-xl shadow-md mx-auto"
         />
         <h1 className="mt-6 text-3xl font-bold">
-          Looka Review 2024：AI Logo 设计工具深度测评
+          Looka Review 2024: Comprehensive Analysis of AI Logo Design Tool
         </h1>
         <p className="mt-2 text-gray-600">
-          我亲手用 Looka 生成了 12 套品牌视觉，这篇文章带你看优缺点、价格，
-          以及 Looka VS Canva，对你是否购买给出明确结论。
+          I personally created 12 brand visual sets using Looka. This article covers the pros and cons, pricing, 
+          and Looka vs Canva comparison to give you a clear verdict on whether it's worth purchasing.
         </p>
         <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2">
           <Stars score={4.2} />
-          <span className="text-sm text-gray-500">（测试日期：2025-07-13）</span>
+          <span className="text-sm text-gray-500">(Tested on: July 13, 2025)</span>
         </div>
         <a
           href="/go/looka"
           className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 text-white hover:bg-blue-700 transition"
         >
-          立即试用 Looka（90 天 Cookie）
+          Try Looka Now (90-day Cookie)
         </a>
       </section>
 
-      {/* 定价 */}
+      {/* Pricing */}
       <section id="pricing" className="mb-10">
-        <h2 className="mb-3 text-2xl font-semibold">2. 定价 & 费用</h2>
+        <h2 className="mb-3 text-2xl font-semibold">2. Pricing & Costs</h2>
 
         <Image
           src="/looka-pricing.png"
@@ -71,27 +71,27 @@ export default function LookaReview() {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-2">套餐</th>
-              <th className="p-2">一次性价格</th>
-              <th className="p-2">包含内容</th>
+              <th className="p-2">Plan</th>
+              <th className="p-2">One-time Price</th>
+              <th className="p-2">What's Included</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="p-2">Basic</td>
               <td className="p-2">$20</td>
-              <td className="p-2">PNG 透明背景 Logo</td>
+              <td className="p-2">PNG logo with transparent background</td>
             </tr>
             <tr>
               <td className="p-2">Premium</td>
               <td className="p-2">$65</td>
-              <td className="p-2">SVG/高分辨率 + 品牌指南</td>
+              <td className="p-2">SVG/high-resolution + brand guidelines</td>
             </tr>
           </tbody>
         </table>
       </section>
 
-      {/* TODO: Pros/Cons、功能详解、替代方案、FAQ …… 之后再补 */}
+      {/* TODO: Pros/Cons, feature details, alternatives, FAQ... to be added later */}
     </main>
   );
 }
