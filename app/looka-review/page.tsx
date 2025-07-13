@@ -1,5 +1,7 @@
 /* app/looka-review/page.tsx */
 import Image from "next/image";
+import nextMdx from '@next/mdx';
+import type { NextConfig } from 'next';
 
 /** ——— SEO ——— */
 export const metadata = {

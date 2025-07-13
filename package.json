@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/mdx": "^15.3.5",
     "@stagewise-plugins/react": "^0.5.2",
     "@stagewise/toolbar-next": "^0.5.2",
     "next": "15.3.4",
